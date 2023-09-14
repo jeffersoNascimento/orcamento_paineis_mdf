@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --green1: rgb(95, 125, 34);
+  --green: rgb(0, 45, 32);
+  --bege: rgb(248, 227, 181);
+}
+
+html,
+body {
+  background: var(--bege);
+  width: 100%;
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 150px;
+  background: var(--green);
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content .header-block {
+  margin: 15px;
+  width: 220px;
+  height: 122px;
+  background: var(--bege);
+  border-radius: 8px;
+  box-shadow: 1px 0px 10px 0px rgb(0, 45, 32);
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+.header-block img {
+  max-width: 200px;
+  height: 80px;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: row;
+}
+
+/* Estilo para a tabela */
+.table-container {
+  margin: 10px auto;
+  background-color: var(--bege);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+table {
+  margin-top: 23px;
+  margin-left: 100px;
+  border-radius: 4px;
+  border-collapse: collapse;
+  background-color: var(--green1);
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+.itens {
+  color: var(--green);
+  font-weight: bold;
+  font-size: large;
+}
+
+th,
+td {
+  color: var(--bege);
+  padding: 10px;
+  border-collapse: collapse;
+  text-align: center;
+  
+}
+
+/* Estilo para os campos de entrada (select e input) */
+.altura,
+.largura,
+.quantidade {
+  text-align: center;
+  color: var(--green);
+  margin-left: 10px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 150px;
+}
+
+.comum {
+  background: var(--green);
+  color: var(--bege);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 240px;
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+.comum select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(248, 227, 181);
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+.cor {
+  background: var(--green);
+  color: var(--bege);
+  margin: 10px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  width: 340px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+.cor label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.cor select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(248, 227, 181);
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+.cor select:hover {
+  border: 1px solid rgb(95, 125, 34);
+}
+
+select,
+input {
+  color: var(--green);
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgb(248, 227, 181);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+select:hover {
+  border: 1px solid rgb(95, 125, 34);
+}
+
+input:hover{
+  border: 1px solid rgb(95, 125, 34);
+}
+
+.calcular {
+  display: flex;
+  justify-content: row;
+}
+
+/* Estilo para o botão "Calcular" */
+.valor {
+  text-align: center;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding: 10px 10px;
+  background-color: var(--green);
+  color: var(--bege);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+.valor:hover {
+  background-color: rgb(0, 62, 46);
+}
+
+
+#resultado {
+  width: 130px;
+  color: var(--bege);
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 40px;
+  vertical-align: middle;
+}
+
+
+/* Estilo para o botão "Voltar para o catálogo" */
+.voltar {
+  margin-right: 20px;
+  margin-block-end: 10px;
+  float: right;
+  padding: 10px 10px;
+  background-color: var(--green);
+  color: var(--bege);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+.voltar:hover {
+  background-color: rgb(0, 62, 46);
+}
+
+#total {
+  font-weight: bold;
+  font-size: large;
+  display: block;
+  margin: 20px;
+  padding: 5px 5px;
+}
+
+#limpar {
+  display: block;
+  float: right;
+  margin: 10px;
+  padding: 5px 5px;
+  background-color: var(--green);
+  color: var(--bege);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgb(0, 45, 32);
+}
+
+#limpar:hover {
+  background-color: rgb(0, 62, 46);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Add responsive styles here */
+  .content {
+    padding: 5px;
+  }
+
+  .header-block {
+    max-width: 100%;
+  }
+
+  table {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Add even more responsive styles here */
+  .content .header-block {
+    width: auto;
+  }
+
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .altura,
+  .largura,
+  .quantidade,
+  .porta,
+  .cor {
+    width: 100%;
+  }
+}
+
+#cor {
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 25px auto; /* Ajuste com base no tamanho da imagem */
+}
